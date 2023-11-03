@@ -12,7 +12,7 @@ ${HOMEPAGEURL}    ${URL}/inventory.html
 Open Browser With URL
     Open Browser    ${URL}    ${BROWSER}
 
-###############  Custome Form Section #######################
+###############  Custom Form Section #######################
 
 Fill Login Form
     [Arguments]    ${username}    ${password}
@@ -25,7 +25,7 @@ Fill Checkout Information Form
     Input Text    id=last-name    ${lastname}
     Input Text    id=postal-code    ${zip}
 
-############ Customer Button ##################
+############ Custom Button ##################
 
 Click Login 
     Click Button    login-button
@@ -66,7 +66,7 @@ Verify Checkout
     [Arguments]    ${pageTitle}
     Should Be Equal    ${pageTitle}    Checkout: Complete!
 
-############# Customer Getter ######################
+############# Custom Getter ######################
 
 Get First Item By Title
     [Arguments]    ${keyword}
