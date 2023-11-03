@@ -1,18 +1,17 @@
 *** Settings ***
-Documentation    This file contain all required 3 positive test cases
-...               as stated in the assesment docs
+Documentation    This file contains keyword related to product/item 
 
 Resource    ../resources/customKeyword.robot
 
 *** Variables ***
 
 *** Keywords ***
-Add Item To Cart
+Add A Item To Cart
     [Arguments]    ${itemname}
     ${title}    Get First Item By Title     ${itemname}
     ${btnId}    Get Add Btn id    ${title}
     Click Add To Cart Btn    ${btnId}
     Click Cart Btn
-    
+    Verify Added Item    ${title}
     
 

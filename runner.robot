@@ -14,8 +14,8 @@ Login
     [Setup]
     Login With Valid Credentials
     
-Add Tshirt To Cart
-    Add Item To Cart    T-Shirt
+Add A Tshirt To Cart
+    Add A Item To Cart    T-Shirt
 
 
 Complete checkout

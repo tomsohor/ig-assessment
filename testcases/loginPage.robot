@@ -1,6 +1,5 @@
 *** Settings ***
-Documentation    This file contain all required 3 positive test cases
-...               as stated in the assesment docs
+Documentation    This file contains keyword related to login test
 
 Resource    ../resources/customKeyword.robot
 

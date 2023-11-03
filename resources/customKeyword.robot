@@ -60,6 +60,10 @@ Verify Valid Login
         Fail    msg=Invalid Credentials
     END
 
+Verify Added Item
+    [Arguments]    ${title}
+    Element Should Contain    class=inventory_item_name    ${title}
+
 Verify Checkout
     [Arguments]    ${pageTitle}
     Should Be Equal    ${pageTitle}    Checkout: Complete!
