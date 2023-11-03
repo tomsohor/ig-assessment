@@ -12,7 +12,6 @@ ${HOMEPAGEURL}    ${URL}/inventory.html
 Open Browser With URL
     Open Browser    ${URL}    ${BROWSER}
 
-
 ###############  Custome Form Section #######################
 
 Fill Login Form
@@ -82,7 +81,7 @@ Get First Item By Title
     END
     RETURN    ${title}
 
-Get Add Btn id
+Get Add Btn Id
     [Arguments]    ${title}
     ${title}    Evaluate    $title.lower().replace(" ","-")
     ${addToCardBtnId}    Set Variable    add-to-cart-${title}
