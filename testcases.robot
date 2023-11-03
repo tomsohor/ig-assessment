@@ -16,7 +16,7 @@ Scenario 1 : Login Into Website
     
 Scenario 2 : Add A Tshirt To Cart
     IF    ${isLogin}
-        Add A Item To Cart    T-Shirt
+        Add An Item To Cart    T-Shirt
     ELSE
         Fail    msg=Login into system is not successful
     END

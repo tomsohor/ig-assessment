@@ -4,7 +4,7 @@ Documentation    This file contains keyword related to product/item
 Resource    ../resources/customKeyword.robot
 
 *** Keywords ***
-Add A Item To Cart
+Add An Item To Cart
     [Arguments]    ${itemName}
     ${itemTitle}    Get First Item By Title     ${itemName}
     ${btnId}    Get Add Btn Id    ${itemTitle}

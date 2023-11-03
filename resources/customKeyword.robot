@@ -28,11 +28,11 @@ Fill Checkout Information Form
 ############ Custom Button ##################
 
 Click Login 
-    Click Button    login-button
+    Click Button    id=login-button
     
 Click Add To Cart Btn
     [Arguments]    ${id}
-    Click Button    ${id}
+    Click Button    id=${id}
 
 Click Cart Btn
     Click Link    class=shopping_cart_link
