@@ -2,29 +2,24 @@
 Documentation    This file contain all required 3 positive test cases
 ...               as stated in the assesment docs
 
-Resource    testcases/login.robot
-
-
-
+Resource    testcases/loginPage.robot
+Resource    testcases/productPage.robot
+Resource    testcases/checkoutPage.robot
 
 Suite Setup    Open Browser With URL
 
 
-*** Variables ***
-
-*** Keywords ***
-
 *** Test Cases ***
-Login Successfully
+Login 
     [Setup]
     Login With Valid Credentials
     
-Add Item To Cart
-    IF    !$isLogin
-        Close Browser
-    ELSE
-        
-    END 
+Add Tshirt To Cart
+    Add Item To Cart    T-Shirt
+
+
+Complete checkout
+    Checkout Item
     
 
     

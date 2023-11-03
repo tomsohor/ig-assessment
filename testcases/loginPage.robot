@@ -8,13 +8,8 @@ Resource    ../resources/customKeyword.robot
 
 *** Keywords ***
 Login With Valid Credentials
-    Enter Username    standard_user
-    Enter Password    secret_sauce
+    Fill Login Form    standard_user   secret_sauce
     Click Login
     ${Current_Url}    Get Location
-    ${isValid}    Verify Valid Login    ${Current_Url}  
-    IF    $isValid
-        Set Test Variable    isLogin    ${True}
-    ELSE
-        Set Test Variable    isLogin    ${False} 
-    END
+    Verify Valid Login    ${Current_Url} 
+    
