@@ -3,8 +3,6 @@ Documentation    This file contains keyword related to product/item
 
 Resource    ../resources/customKeyword.robot
 
-*** Variables ***
-
 *** Keywords ***
 Add A Item To Cart
     [Arguments]    ${itemname}

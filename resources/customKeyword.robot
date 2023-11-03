@@ -7,7 +7,6 @@ Library           SeleniumLibrary
 ${BROWSER}    Chrome
 ${URL}    https://www.saucedemo.com
 ${HOMEPAGEURL}    ${URL}/inventory.html
-# ${isLogin}
 
 *** Keywords ***
 Open Browser With URL
