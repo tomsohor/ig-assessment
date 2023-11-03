@@ -5,7 +5,7 @@ Resource    ../resources/customKeyword.robot
 
 *** Keywords ***
 Add A Item To Cart
-    [Arguments]    ${itemname}
+    [Arguments]    ${itemName}
     ${itemTitle}    Get First Item By Title     ${itemName}
     ${btnId}    Get Add Btn Id    ${itemTitle}
     Click Add To Cart Btn    ${btnId}

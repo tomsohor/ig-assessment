@@ -71,7 +71,6 @@ Verify Checkout
 Get First Item By Title
     [Arguments]    ${keyword}
     @{itemTitle}    Get Webelements    class=inventory_item_name
-     
     FOR    ${item}    IN    @{itemTitle}  
         ${itemText}    Get Text    ${item}
         IF    $keyword in $itemText

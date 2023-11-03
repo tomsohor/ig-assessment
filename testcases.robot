@@ -21,10 +21,9 @@ Scenario 2 : Add A Tshirt To Cart
         Fail    msg=Login into system is not successful
     END
     
-
-
 Scenario 3 : Complete checkout
      IF    ${isLogin}
+        Sleep   2
         Checkout Item
     ELSE
         Fail    msg=Login into system is not successful
